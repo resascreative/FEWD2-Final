@@ -16,42 +16,165 @@
     <!-- STEP 1 -->
         <div>
             <form>
-                <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group">
                     <label for="inputName">Name</label>
                     <input type="name" class="form-control" id="inputName">
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="inputPhone">Phone Number</label>
-                    <input type="phone number" class="form-control" id="inputPhone">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="inputEmail">Email</label>
-                    <input type="password" class="form-control" id="inputEmail">
-                </div>
-                </div>
+                
                 <div class="form-row">
                 <!-- STEP 1 A -->
                     <div class="form-group col-md-2">
-                    <label for="inputAddressType">Address Type</label>
-                    <select class="form-control" id="inputAddress">
-                    <option value="house">House</option>
-                    <option value="apartment">Apartment</option>
-                    <option value="business">business</option>
-                    <option value="hotel">Hotel</option>
-                    <option value="campus">Campus</option>
-                    <option value="dorm">Dorm</option>
-                    <option value="other">Other</option>
-                    </select>
-             </div>
-                <div class="form-group col-md-7">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress">
+                        <label for="inputAddressType">Address Type</label>
+                        <select class="form-control" id="inputAddress">
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="business">business</option>
+                            <option value="hotel">Hotel</option>
+                            <option value="campus">Campus</option>
+                            <option value="dorm">Dorm</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, suite, etc...">
+                    </div>
                 </div>
-                <div class="form-group col-md-3">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, suite, etc...">
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control" id="inputState">
+                        <option selected>Select...</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select></option>
+                    </div>
+            
+                <div class="form-group col-md-2">
+                    <label for="inputZipcode">Zipcode</label>
+                    <input type="text" class="form-control" id="inputZipcode">
                 </div>
+            </div>
+         </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputPhone">Phone Number</label>
+                    <input type="phone number" class="form-control" id="inputPhone">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="password" class="form-control" id="inputEmail">
+                </div>
+            </div>
+        
+            </form>
+              
+               <br>
+
+
+
+
+    <!-- Part 2 – Build Your Order 
+    --------------------------------------------------->
+    <!-- STEP 1 -->
+        <div class="crust type">
+            <h2>LET'S GET BUILDING!</h2>
+            <h5>Choose your crust</h5>
+            <input type="radio" id="handtossed" name="crust" value="handtossed">
+            <label for="male">Hand Tossed</label><br>
+            <input type="radio" id="thincrust" name="crust" value="thincrust">
+            <label for="female">Thin Crust</label><br>
+            <input type="radio" id="newyorkstyle" name="crust" value="newyorkstyle">
+            <label for="other">New York Style</label><br>
+            <input type="radio" id="glutenfree" name="crust" value="glutenfree">
+            <label for="other">Gluten Free</label>
+        </div>
+
+    <!-- BILLING INFO -->
+        <div class="payment info">
+            <h2>Billing Information</h2>
+            <div class="form-group">
+                <div class="form-check sameinfo">
+                    <input class="form-check-input" type="checkbox" id="sameinfo">
+                    <label class="form-check-label" for="samedelivery-checkbox">
+                        <h6>Same as delivery</h6>
+                    </label>
+                </div>
+            </div>
+        <form>
+            <div class="form-group">
+                <label for="inputName">Name</label>
+                <input type="name" class="form-control" id="inputName">
+            </div>
+            
+            <div class="form-row">                
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, suite, etc...">
+                </div>
+            </div>
                 <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputCity">City</label>
@@ -113,35 +236,15 @@
                         <option value="WI">WI</option>
                         <option value="WY">WY</option>
                     </select></option>
-                    
                 </div>
-                <div class="form-group col-md-2">
-                    <label for="inputZipcode">Zipcode</label>
-                    <input type="text" class="form-control" id="inputZipcode">
-                </div>
-                </div>
-            </form>
-               <hr>
-               <br>
-
-
-
-
-    <!-- Part 2 – Build Your Order 
-    --------------------------------------------------->
-    <!-- STEP 1 -->
-        <div class="crust type">
-            <h2>LET'S GET BUILDING!</h2>
-            <h5>Choose your crust</h5>
-            <input type="radio" id="handtossed" name="crust" value="handtossed">
-            <label for="male">Hand Tossed</label><br>
-            <input type="radio" id="thincrust" name="crust" value="thincrust">
-            <label for="female">Thin Crust</label><br>
-            <input type="radio" id="newyorkstyle" name="crust" value="newyorkstyle">
-            <label for="other">New York Style</label><br>
-            <input type="radio" id="glutenfree" name="crust" value="glutenfree">
-            <label for="other">Gluten Free</label>
+        
+            <div class="form-group col-md-2">
+                <label for="inputZipcode">Zipcode</label>
+                <input type="text" class="form-control" id="inputZipcode">
+            </div>
         </div>
+     </div>
+
     </main>
 <!-- Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
