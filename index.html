@@ -161,7 +161,7 @@
             </div>
         <form>
             <div class="form-group">
-                <label for="inputName">Name</label>
+                <label for="inputName">Full Name</label>
                 <input type="name" class="form-control" id="inputName">
             </div>
             
@@ -244,6 +244,52 @@
             </div>
         </div>
      </div>
+     <div class="payment info">
+        <h2>Card Information</h2>
+        <form>
+            <div class="form-group">
+                <label for="inputName">Card Number</label>
+                <input type="name" class="form-control" id="ccn" placeholder="1234567890123456">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" class="form-control">
+                </div>
+
+                <div class="form-group col-md-5">
+                    <label>Expires:</label>
+                        <select class="form-control" id="expire-month">
+                            <option value="jan">Jan</option>
+                            <option value="feb">Feb</option>
+                            <option value="mar">Mar</option>
+                            <option value="apr">Apr</option>
+                            <option value="may">May</option>
+                            <option value="jun">Jun</option>
+                            <option value="jul">Jul</option>
+                            <option value="aug">Aug</option>
+                            <option value="sept">Sep</option>
+                            <option value="oct">Oct</option>
+                            <option value="nov">Nov</option>
+                            <option value="dec">Dec</option>
+                        </select>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for=""></label>
+                <select class="form-control" id="expire-year" style="margin-top: .5em;">
+                    <option value="2020">2020</option>
+                    <option value="2015">2021</option>
+                    <option value="2016">2022</option>
+                    <option value="2017">2023</option>
+                    <option value="2018">2024</option>
+                    <option value="2019">2025</option>
+                    <option value="2015">2026</option>
+                </select>
+                </div>
+                </div>
+            </div> <!--form row ccinfo-->
+            </form>
 
     </main>
 <!-- Bootstrap -->
