@@ -8,6 +8,6 @@ main {
     margin: auto;
     /* overflow: hidden; */
 }
-h2, h5, label {
+h2, h5, p, label {
     color: white;
 }
