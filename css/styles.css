@@ -1,11 +1,13 @@
 body {
     font-family: 'Delius Unicase', cursive;
-    background-image: url("/pizzaapp/images/pontevecchioblu.jpeg");
-    background-color:; 
-
+    background-image: url("/images/background.jpg");
+   
 }
 main {
     width: 960px;
     margin: auto;
     /* overflow: hidden; */
+}
+h2, h5, label {
+    color: white;
 }
