@@ -138,17 +138,19 @@
     --------------------------------------------------->
     <!-- STEP 1 -->
     <form>
-        <div id="crustType">
-            <h2>LET'S GET BUILDING!</h2>
+        <div class="form-group">
+            
+        <div id="crustType" >
+            <h2>LET'S GET BUILDING!</h2>    
             <h5>PICK YOUR CRUST</h5>
             <input type="radio" id="handtossed" name="crust" value="handtossed">
-            <label for="male">Hand Tossed</label><br>
+            <label for="handtossed">Hand Tossed</label>
             <input type="radio" id="thincrust" name="crust" value="thincrust">
-            <label for="female">Thin Crust</label><br>
+            <label for="thincrust">Thin Crust</label>
             <input type="radio" id="newyorkstyle" name="crust" value="newyorkstyle">
-            <label for="other">New York Style</label><br>
+            <label for="newyorkstyle">New York Style</label>
             <input type="radio" id="glutenfree" name="crust" value="glutenfree">
-            <label for="other">Gluten Free</label>
+            <label for="glutenfree">Gluten Free</label>
         </div>
         <!--
                     Drop down (depending on dough):
@@ -157,39 +159,74 @@
                     - New York Style -> Large ($16.99), Extra Large ($19.99)
                     - Gluten Free -> Small ($10.99)
                 -->
-                 
-            <div id="cheeseChoice">
-                <!--
-                    Drop down:
-                    - Light (no charge)
-                    - Normal (default; no charge)
-                    - Extra (+$2.99)
-                    - Double (+$3.99)
-                -->
-                <h5>PICK YOUR CHEESE</h5>
-                <select name="cheese">
-                    <option value="light">Light (+0.00)</option>
-                    <option value="normal">Normal (+0.00)</option>
-                    <option value="extra">Extra (+2.99)</option>
-                    <option value="double">Double (+3.99)</option>
-                </select>
-            </div>
-               
-            <div id="sauceChoice"> 
-                <!--Drop down:
-                    - Regular Tomato (no charge)
-                    - Hearty Tomato (+$0.99)
-                    - BBQ Sauce (+$1.99)-->
-                <h5>PICK YOUR SAUCE</h5>
-                <select name="sauce">
-                    <option value="regular">Regular Tomato (+0.00)</option>
-                    <option value="hearty">Hearty Tomato (+0.99)</option>
-                    <option value="bbq">BBQ Sauce (+1.99)</option>
-                </select>
-            </div>
-                pepperoni, sausage, ham, bacon, salami, peppers, olives, jalapenos, mushrooms, pineapple, and onion
+            <div class="form-row">
+                <div class="form-group col-md-6" id="cheeseChoice">     
+                    <!-- Drop down:
+                        - Light (no charge)
+                        - Normal (default; no charge)
+                        - Extra (+$2.99)
+                        - Double (+$3.99)-->
+                    <h5>PICK YOUR CHEESE</h5>
+                    <select name="cheese">
+                        <option value="light">Light (+0.00)</option>
+                        <option value="normal">Normal (+0.00)</option>
+                        <option value="extra">Extra (+2.99)</option>
+                        <option value="double">Double (+3.99)</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                <div id="sauceChoice"> 
+                    <!--Drop down:
+                        - Regular Tomato (no charge)
+                        - Hearty Tomato (+$0.99)
+                        - BBQ Sauce (+$1.99)-->
+                    <h5>PICK YOUR SAUCE</h5>
+                    <select name="sauce">
+                        <option value="regular">Regular Tomato (+0.00)</option>
+                        <option value="hearty">Hearty Tomato (+0.99)</option>
+                        <option value="bbq">BBQ Sauce (+1.99)</option>
+                    </select>
+                </div>
+                </div>
+             </div>
+           
         <div>
-
+              <!-- TOPPINGS
+                - pepperoni
+                - sausage
+                - ham
+                - bacon
+                - salami
+                - peppers
+                - olives
+                - jalapenos
+                - mushrooms
+                - pineapple
+                - onions -->
+            <h5>PICK YOUR TOPPINGS</h5>
+            <input type="checkbox" id="toppings-pep" name="crust" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="toppings-sausage" name="crust" value="sausage">
+                <label for="sausage">Sausage</label>
+            <input type="checkbox" id="toppings-ham" name="crust" value="ham">
+                <label for="ham">Ham</label>
+            <input type="checkbox" id="toppings-bacon" name="crust" value="bacon">
+                <label for="bacon">Bacon</label>
+            <input type="checkbox" id="toppings-salami" name="crust" value="salami">
+                <label for="salami">Salami</label>
+            <input type="checkbox" id="toppings-peppers" name="crust" value="peppers">
+                <label for="peppers">Peppers</label>
+            <input type="checkbox" id="toppings-olives" name="crust" value="olives">
+                <label for="olives">Olives</label>
+            <input type="checkbox" id="toppings-jalapenos" name="crust" value="jalapenos">
+                <label for="jalapenos">Jalapenos</label>
+            <input type="checkbox" id="toppings-mush" name="crust" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+            <input type="checkbox" id="toppings-pine" name="crust" value="pineapples">
+                <label for="pineapples">Pineapples</label>
+            <input type="checkbox" id="toppings-onions" name="crust" value="onions">
+                <label for="onions">Onions</label>
+                
         </div>
         </form>
     <!-- PART 3 BILLING INFORMATION
