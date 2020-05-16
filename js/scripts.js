@@ -1,11 +1,20 @@
-var crustType = {
+// OTHER ADDRESS TYPE
+    dropSelect.addEventListener("change", function() {
+        if (dropSelect.options.value = "other"){
+            extra.setAttribute("class", "show");
+        } else {
+            extra.setAttribute("class", "hidden");
+        }
+    }, false);
+
+let crustType = {
     HT : "Hand Tossed",
     TC : "Thin Crust",
     NYS : "New York Style",
     GF : "Gluten Free"
 };
 
-var gSizes = {
+let sizeCost = {
     "Hand Tossed": [
         {
             size: "Small",
@@ -14,7 +23,7 @@ var gSizes = {
         {
             size: "Medium",
             cost: 12.99,
-            check: true
+            // check: true
         },
         {
             size: "Large",
