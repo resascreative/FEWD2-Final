@@ -1,4 +1,4 @@
-var DoughType = {
+var crustType = {
     HT : "Hand Tossed",
     TC : "Thin Crust",
     NYS : "New York Style",
