@@ -1,14 +1,14 @@
 // OTHER ADDRESS TYPE 
-let dropSelect = document.getElementById("addressType");
-let otherAdd = document.getElementById("otherAdd");//hidden other address text field 
+    let extraAddType = document.getElementById("addressType");
+    let otherAdd = document.getElementById("otherAdd");//hidden other address text field 
 
-dropSelect.addEventListener("change", function(){
-    if (dropSelect.value == "other"){
-        otherAdd.setAttribute("class", "show");
-    }else{
-        otherAdd.setAttribute("class", "hidden");
-    }
-}, false);
+    extraAddType.addEventListener("change", function(){
+        if (extraAddType.value == "other"){
+            otherAdd.setAttribute("class", "show");
+        }else {
+            otherAdd.setAttribute("class", "hidden");
+        }
+    }, false);
 
 
 let crustType = {

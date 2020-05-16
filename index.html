@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/normalize.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Pizza App</title>
 
@@ -24,7 +25,7 @@
                 
                 <div class="form-row">
                 <!-- STEP 1 A -->
-                    <div class="form-group col-md-2">
+                    <div class="form-group col-md-2"id="addressType">
                         <label for="addressType">Address Type</label>
                         <select class="form-control" id="addressType">
                             <option value="house">House</option>
@@ -35,13 +36,8 @@
                             <option value="dorm">Dorm</option>
                             <option value="other" id="other">Other</option>
                         </select>
-        
-                        <section class="hidden" id="otherAdd">
-                            <label for="otherAdd">Please specify:</label>
-                            <input type="text" id="otherAddType" class="form-control">
-                        </section>
-                    
-                    </div>
+                        </div>
+
                     <div class="form-group col-md-7">
                         <label for="inputAddress">Address</label>
                         <input type="text" class="form-control" id="inputAddress">
@@ -51,7 +47,15 @@
                         <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, suite, etc...">
                     </div>
                 </div>
-                    <div class="form-row">
+
+                <div class="form-group">
+                    <div class="hidden" id="otherAdd">
+                        <label for="otherAdd">Please specify:</label>
+                        <input type="text" id="otherAddType" class="form-control">
+                    </div>
+                </div>
+
+             <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputCity">City</label>
                         <input type="text" class="form-control" id="inputCity">
@@ -397,6 +401,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 <!-- Javascript-->
-<script src="js/scripts.js"></script>
+
 </body>
 </html>
