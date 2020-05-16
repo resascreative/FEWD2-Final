@@ -3,7 +3,7 @@
     let otherAdd = document.getElementById("otherAdd");//hidden other address text field 
 
     extraAddType.addEventListener("change", function(){
-        if (extraAddType.value == "other"){
+        if (extraAddType.value = "other"){
             otherAdd.setAttribute("class", "show");
         }else {
             otherAdd.setAttribute("class", "hidden");
