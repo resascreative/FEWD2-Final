@@ -1,11 +1,15 @@
-// OTHER ADDRESS TYPE
-    dropSelect.addEventListener("change", function() {
-        if (dropSelect.options.value = "other"){
-            extra.setAttribute("class", "show");
-        } else {
-            extra.setAttribute("class", "hidden");
-        }
-    }, false);
+// OTHER ADDRESS TYPE 
+let dropSelect = document.getElementById("addressType");
+let otherAdd = document.getElementById("otherAdd");//hidden other address text field 
+
+dropSelect.addEventListener("change", function(){
+    if (dropSelect.value == "other"){
+        otherAdd.setAttribute("class", "show");
+    }else{
+        otherAdd.setAttribute("class", "hidden");
+    }
+}, false);
+
 
 let crustType = {
     HT : "Hand Tossed",
