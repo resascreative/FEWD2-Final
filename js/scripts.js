@@ -1,12 +1,12 @@
 // OTHER ADDRESS TYPE 
     let extraAddType = document.getElementById("addressType");
-    let otherAdd = document.getElementById("otherAdd");//hidden other address text field 
+    let addressType2 = document.getElementById("addressType2");//hidden other address text field 
 
     extraAddType.addEventListener("change", function(){
         if (extraAddType.value = "other"){
-            otherAdd.setAttribute("class", "show");
+            addressType2.setAttribute("class", "show");
         }else {
-            otherAdd.setAttribute("class", "hidden");
+            addressType2.setAttribute("class", "hidden");
         }
     }, false);
 

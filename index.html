@@ -15,17 +15,17 @@
     <!-- Part 1 – Delivery Location-->
     <!-- STEP 1 -->
     <form>   
-        <div> <!--OPENING DIV-->
+        <div> <!--OPENING FORM DIV-->
             <h2>Delivery Information</h2>
     
                 <div class="form-group">
                     <label for="inputName">Name</label>
                     <input type="text" class="form-control" id="inputName"></div>
                 
-                <div class="form-row"> <!--OPENING DIV-->
+                <div class="form-row"> <!--OPENING ADDRESS DIV-->
                 <!-- STEP 1 A -->
                     <div class="form-group col-md-2" id="addressType">
-                        <label for="addressType">Address Type</label>
+                        <label for="addressType2">Address Type</label>
                         <select class="form-control" id="addressType2">
                             <option value="house">House</option>
                             <option value="apartment">Apartment</option>
@@ -33,8 +33,7 @@
                             <option value="hotel">Hotel</option>
                             <option value="campus">Campus</option>
                             <option value="dorm">Dorm</option>
-                            <option value="other" id="other">Other</option>
-                        </select></div>
+                            <option value="other" id="other">Other</option></select></div>
 
                     <div class="form-group col-md-7">
                         <label for="inputAddress">Address</label>
@@ -43,16 +42,16 @@
                     <div class="form-group col-md-3">
                         <label for="inputAddress2">Address 2</label>
                         <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, suite, etc..."></div>
-                </div> <!--CLOSING DIV-->
+                </div> <!--CLOSING ADDRESS DIV-->
 
-                <div class="form-group">
+                <div class="form-group"><!--OPENING DIV OTHER ADDY-->
                     <div  id="otherAdd">
                         <!-- class="hidden" -->
-                        <label for="otherAdd">Please specify:</label>
+                        <label for="otherAddType">Please specify:</label>
                         <input type="text" id="otherAddType" class="form-control"></div>
-                </div> <!--closing div-->
+                </div> <!--CLOSING DIV OTHER ADDY-->
 
-             <div class="form-row">
+             <div class="form-row"><!--OPENING DIV CITY STATE ZIP-->
                     <div class="form-group col-md-6">
                         <label for="inputCity">City</label>
                         <input type="text" class="form-control" id="inputCity"></div>
@@ -117,15 +116,16 @@
                 <div class="form-group col-md-2">
                     <label for="inputZip">Zipcode</label>
                     <input type="text" class="form-control" id="inputZip" pattern="[0-9]{5}"></div>
+             </div> <!--CLOSING DIV CITY STATE ZIP-->
 
-            <div class="form-row">
+            <div class="form-row"><!--OPENING TEL EMAIL-->
                 <div class="form-group col-md-6">
                     <label for="inputPhone">Phone Number</label>
                     <input type="tel" class="form-control" id="inputPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></div>
                 <div class="form-group col-md-6">
                     <label for="inputEmail">Email</label>
                     <input type="email" class="form-control" id="inputEmail"></div>
-            </div>
+            </div><!--CLOSNG DIV TEL EMAIL-->
         </div>
         <!-- </form> -->
               
@@ -240,7 +240,7 @@
                 
                 <div class="form-check sameinfo">
                     <input class="form-check-input" type="checkbox" id="sameinfo">
-                    <label class="form-check-label" for="samedelivery-checkbox">
+                    <label class="form-check-label" for="sameinfo">
                     <strong>Same as delivery</strong></label></div>
             </div><!--CLOSING DIV-->
         <!-- <form> -->
@@ -368,6 +368,7 @@
                     <option value="2027">2027</option>
                     <option value="2028">2028</option>
                 </select></div>
+                </div>
         </div> <!--CLOSING DIV CC INFO-->
     </form> 
     <!--END OF FORM-->
