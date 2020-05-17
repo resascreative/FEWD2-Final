@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-image: url("/images/white-background.jpg");
+    /* background-image: url("/images/white-background.jpg"); */
    
 }
 main {
@@ -11,3 +11,6 @@ main {
 /* h2, h5, p, label {
     color: white;
 } */
+h5 {
+    color: red;
+}
