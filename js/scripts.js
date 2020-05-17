@@ -1,14 +1,14 @@
 // OTHER ADDRESS TYPE 
-    let AddType = document.getElementById("addressType");
-    let otherAdd = document.getElementById("otherAddType");//hidden other address text field 
+    // let AddType = document.getElementById("addressType");
+    // let otherAdd = document.getElementById("otherAddType");//hidden other address text field 
 
-    AddType.addEventListener("change", function(){
-        if (AddType.value = "other"){
-            otherAdd.setAttribute("class", "show");
-        }else {
-            otherAdd.setAttribute("class", "hidden");
-        }
-    }, false);
+    // AddType.addEventListener("change", function(){
+    //     if (AddType.value = "other"){
+    //         otherAdd.setAttribute("class", "show");
+    //     }else {
+    //         otherAdd.setAttribute("class", "hidden");
+    //     }
+    // }, false);
 
 
 
@@ -17,7 +17,7 @@
 let crustType = {
     HT : "Hand Tossed",
     TC : "Thin Crust",
-    NYS : "New York Style",
+    NY : "New York Style",
     GF : "Gluten Free"
 };
 
@@ -67,4 +67,27 @@ let sizeCost = {
         }
     ]
 };
+
+$("crustType").addEventListener("click", doughSelectedHandler);
+$("sizeCost").addEventListener("click", sizeSelectedHandler);
+$("cheese").addEventListener("click", cheeseSelectedHandler);
+$("sauce").addEventListener("click", sauceSelectedHandler);
+$("toppings").addEventListener("click", toppingsSelectedHandler);
  
+// function Pizza(crustType) {
+//     "use strict";
+//     var dough, size, sizes = [], cheese, sauce, toppings = [], cost = 0;
+//     dough = iDough;
+    
+    // function setSizes(dough) {
+    //     switch (dough) {
+    //     case "Hand Tossed":
+    //     case "Thin Crust":
+    //     case "New York Style":
+    //     case "Gluten Free":
+    //         sizes = gSizes[dough];
+    //         break;
+    //     default:
+    //         break;
+    //     }
+    // }
