@@ -12,12 +12,11 @@
 </head>
 <body>
     <main>
-    <!-- Part 1 – Delivery Location
-    --------------------------------------------------->
+    <!-- Part 1 – Delivery Location-->
     <!-- STEP 1 -->
         <div>
             <h2>Delivery Information</h2>
-            <form>
+        <form>
                 <div class="form-group">
                     <label for="inputName">Name</label>
                     <input type="name" class="form-control" id="inputName">
@@ -25,9 +24,9 @@
                 
                 <div class="form-row">
                 <!-- STEP 1 A -->
-                    <div class="form-group col-md-2"id="addressType">
+                    <div class="form-group col-md-2" id="addressType">
                         <label for="addressType">Address Type</label>
-                        <select class="form-control" id="addressType">
+                        <select class="form-control" id="addressType2">
                             <option value="house">House</option>
                             <option value="apartment">Apartment</option>
                             <option value="business">Business</option>
@@ -115,12 +114,12 @@
                             <option value="WV">WV</option>
                             <option value="WI">WI</option>
                             <option value="WY">WY</option>
-                        </select></option>
+                        </select>
                     </div>
             
                 <div class="form-group col-md-2">
                     <label for="inputZipcode">Zipcode</label>
-                    <input type="text" class="form-control" id="inputZipcode">
+                    <input type="text" class="form-control" id="inputZipcode" pattern="[0-9]{5}">
                 </div>
             </div>
          </div>
@@ -128,15 +127,15 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputPhone">Phone Number</label>
-                    <input type="phone number" class="form-control" id="inputPhone"  placeholder="555-555-5555">
+                    <input type="tel" class="form-control" id="inputPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputEmail">Email</label>
-                    <input type="password" class="form-control" id="inputEmail">
+                    <input type="email" class="form-control" id="inputEmail">
                 </div>
             </div>
         
-            </form>
+        </form>
               
                <br>
 
@@ -261,7 +260,7 @@
         <form>
             <div class="form-group">
                 <label for="inputName">Full Name</label>
-                <input type="name" class="form-control" id="inputName">
+                <input type="text" class="form-control" id="inputName">
             </div>
             
             <div class="form-row">                
