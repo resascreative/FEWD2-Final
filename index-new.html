@@ -32,21 +32,21 @@
 	                    <option value="other" id="other">Other</option>
                     </select>
 		    </div> <!--closing div address type-->
-		    <div class="form-group col-md-6">
+		    <div class="form-group col-md-6"> <!--opening div address-->
 		      <label for="inputAddress">Address</label>
 		    	<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-		    </div>
+		    </div> <!--closing div address-->
 		    <div class="form-group col-md-4">
-		      <label for="inputAddress0">Address 2</label>
+		      <label for="inputAddress0">Address 2</label> <!--opening div address 2-->
 		    	<input type="text" class="form-control" id="inputAddress0" placeholder="Apartment, studio, etc...">
-		    </div>
+		    </div> <!--closing div address 2-->
 		  </div> <!--CLOSING DIV ADDRESS SECTION-->
 		  
 		  <div class="form-row"> <!--CLOSING DIV CITY STATE ZIP SECTION-->
-		    <div class="form-group col-md-6">
+		    <div class="form-group col-md-6"> <!--opening div city-->
 		      <label for="inputCity">City</label>
 		      <input type="text" class="form-control" id="inputCity">
-		    </div>
+		    </div> <!--closing div city-->
 		    <div class="form-group col-md-4"> <!--opening div state-->
 		      <label for="inputState">State</label>
 		      		<select id="inputState" class="form-control">
@@ -104,22 +104,24 @@
                         <option value="WY">WY</option>    
 		      		</select>
 		    </div> <!--closing div state-->
-		    <div class="form-group col-md-2">
+		    <div class="form-group col-md-2"> <!--closing div zip-->
 		      <label for="inputZip">Zip</label>
 		      <input type="text" class="form-control" id="inputZip">
-		    </div>
+		    </div> <!--closing div zip-->
 		  </div> <!--CLOSING DIV CITY STATE ZIP SECTION-->
-		  <div class="form-row">
-		    <div class="form-group col-md-6">
+
+		  <div class="form-row"><!--OPENING DIV TEL/EMAIL SECTION-->
+		    <div class="form-group col-md-6"> <!--opening div tel-->
 		      <label for="inputPhone">Phone Number</label>
 		      <input type="tel" class="form-control" id="inputPhone">
-		    </div>
-		    <div class="form-group col-md-6">
+		    </div> <!--closing div tel-->
+		    <div class="form-group col-md-6"> <!--closing div email-->
 		      <label for="inputEmail">Email</label>
 		      <input type="email" class="form-control" id="inputEmail">
-		    </div>
-		  </div>
-		  <div class="form-group">
+		    </div> <!--closing div email-->
+		  </div> <!--CLOSING DIV TEL/EMAIL SECTION-->
+
+		  <!-- <div class="form-group">
 		    <div class="form-check">
 		      <input class="form-check-input" type="checkbox" id="gridCheck">
 		      <label class="form-check-label" for="gridCheck">
@@ -127,32 +129,45 @@
 		      </label>
 		    </div>
 		  </div>
-		  <button type="submit" class="btn btn-primary">Sign in</button>
+		  <button type="submit" class="btn btn-primary">Sign in</button> -->
+		</form> 
+		<form>
+		<h2>LET'S GET BUILDING!</h2>	
+
 		</form>
 
-		<form name="frm2">
+		<form name="frm3">
 		<h2>Billing Information</h2>
+			<div class="form-check sameinfo"> <!--opening div same as--> 
+               <input class="form-check-input" type="checkbox" id="sameinfo">
+                 <label class="form-check-label" for="sameinfo">
+                 <strong>Same as delivery</strong></label>
+            </div><!--closing div same as-->
+
 			<div class="form-row"> <!--OPENING DIV BILL NAME-->
 		      <label for="inputName2">Name on card</label>
 		      <input type="text" class="form-control" id="inputName2">
 		  </div> <!--CLOSING DIV BILL NAME-->
 
 		  <div class="form-row"> <!--OPENING DIV BILL ADDRESS SECTION-->
-		  	<div class="form-group col-md-6">
+		  	<div class="form-group col-md-6"> <!--opening div bill address-->
 		      <label for="inputAddress2">Address</label>
 		    	<input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
-		    </div>
-		    <div class="form-group col-md-6">
+		    </div> <!--closing div bill address-->
+
+		    <div class="form-group col-md-6"> <!--opening div bill address 2-->
 		      <label for="inputAddress01">Address 2</label>
 		    	<input type="text" class="form-control" id="inputAddress01" placeholder="Apartment, studio, etc...">
-		    </div>
+		    </div> <!--closing div bill address 2-->
 		  </div> <!--CLOSING DIV BILL ADDRESS SECTION-->
-		  <div class="form-row"> <!--OPENING DIV CITY STATE ZIP SECTION-->
-		    <div class="form-group col-md-6">
+
+		  <div class="form-row"> <!--OPENING DIV BILL CITY STATE ZIP SECTION-->
+		    <div class="form-group col-md-6"> <!--closing div bill city-->
 		      <label for="inputCity2">City</label>
 		      <input type="text" class="form-control" id="inputCity2">
-		    </div>
-		    <div class="form-group col-md-4"> <!--opening div state-->
+		    </div> <!--closing div bill city-->
+
+		    <div class="form-group col-md-4"> <!--opening  bill div state-->
 		      <label for="inputState2">State</label>
 		      		<select id="inputState2" class="form-control">
 		        		<option selected>Select...</option>
@@ -209,27 +224,28 @@
                         <option value="WY">WY</option>    
 		      		</select>
 		    </div> <!--closing div bill state-->
-		    <div class="form-group col-md-2">
+
+		    <div class="form-group col-md-2"><!--opening div bill state-->
 		      <label for="inputZip2">Zip</label>
 		      <input type="text" class="form-control" id="inputZip2">
-		    </div>
+		    </div><!--closing div bill zip-->
 		  </div> <!--CLOSING DIV BILL CITY STATE ZIP SECTION-->
 		</form>
 
-		<form name="frm3">
+		<form name="frm4">
 		<h2>Card Information</h2>
 		  <div class="form-row"> <!--OPENING DIV CARD #-->
 		      <label for="inputCard">Card Number</label>
 		      <input type="number" class="form-control" id="inputCard">
 		  </div> <!--CLOSING DIV CARD #-->
 
-		  <div class="form-row">
-		    <div class="form-group col-md-4">
-		      <label for="inputCity">CVC</label>
-		      <input type="text" class="form-control" id="inputCity">
-		    </div>
-		    <div class="form-group col-md-4">
-		      <label for="inputState">Month</label>
+		  <div class="form-row"> <!--OPENING DIV CARD INFO-->
+		    <div class="form-group col-md-4"><!--opening div cvc-->
+		      <label for="inputCvc">CVC</label>
+		      <input type="text" class="form-control" id="inputCvc">
+		    </div> <!--closing div cvc-->
+		    <div class="form-group col-md-4"> <!--opening div month-->
+		      <label for="inputState">Month</label> 
 		      		<select class="form-control" id="expire-month" >
                     	<option value="jan">01</option>
                         <option value="feb">02</option>
@@ -244,9 +260,9 @@
                         <option value="nov">11</option>
                         <option value="dec">12</option>
                     </select>
-		    </div>
-		    <div class="form-group col-md-4">
-		      <label for="inputYear">Year</label>
+		    </div> <!--closing div month-->
+		    <div class="form-group col-md-4"> <!--opening div year-->
+		      <label for="expire-year">Year</label>
 		      	<select class="form-control" id="expire-year" > 
                     <!-- style="margin-bottom: 9em;" -->
                     <option value="2020">2020</option>
@@ -259,9 +275,8 @@
                     <option value="2027">2027</option>
                     <option value="2028">2028</option>
                 </select>
-		    </div>
-		  </div>
-			
+		    </div> <!--closing div year-->
+		  </div> <!--CLOSING DIV CARD INFO-->
 		</form>
 
     </main>
