@@ -22,7 +22,7 @@ let crustType = {
 };
 
 let sizeCost = {
-    "HandTossed": [
+    "Hand Tossed": [
         {
             size: "Small",
             cost: 9.99
@@ -37,7 +37,7 @@ let sizeCost = {
             cost: 14.99
         }
     ],
-    "ThinCrust": [
+    "Thin Crust": [
         {
             size: "Medium",
             cost: 11.99,
@@ -48,7 +48,7 @@ let sizeCost = {
             cost: 13.99
         }
     ],
-    "NewYorkStyle": [
+    "New York Style": [
         {
             size: "Large",
             cost: 14.99,
@@ -59,7 +59,7 @@ let sizeCost = {
             cost: 19.99
         }
     ],
-    "GlutenFree": [
+    "Gluten Free": [
         {
             size: "Small",
             cost: 10.99,
@@ -67,3 +67,4 @@ let sizeCost = {
         }
     ]
 };
+ 
