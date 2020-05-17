@@ -8,267 +8,55 @@
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
-    <title>Pizza App</title>
-
+    <title>Pizza Joint App</title>
 </head>
 <body>
     <main>
-    <!-- Part 1 – Delivery Location-->
-    <!-- STEP 1 -->
-    <form>   
-        <div> <!--OPENING FORM DIV-->
-            <h2>Delivery Information</h2>
-    
-                <div class="form-group">
-                    <label for="inputName">Name</label>
-                    <input type="text" class="form-control" id="inputName"></div>
-                
-                <div class="form-row"> <!--OPENING ADDRESS DIV-->
-                <!-- STEP 1 A -->
-                    <div class="form-group col-md-2">
-                        <label for="addressType2">Address Type</label>
-                        <select class="form-control" id="addressType2">
-                            <option value="house">House</option>
-                            <option value="apartment">Apartment</option>
-                            <option value="business">Business</option>
-                            <option value="hotel">Hotel</option>
-                            <option value="campus">Campus</option>
-                            <option value="dorm">Dorm</option>
-                            <option value="other" id="other">Other</option>
-                        </select></div>
+    	<form name="frm1">
+    	<h2>Delivery Information</h2>
+		  <div class="form-row"> <!--OPENING DIV NAME-->
+		      <label for="inputName">Full Name</label>
+		      <input type="text" class="form-control" id="inputName">
+		  </div> <!--CLOSING DIV NAME-->
 
-                    <div class="form-group col-md-7">
-                        <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress"></div>
-
-                    <div class="form-group col-md-3">
-                        <label for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, suite, etc..."></div>
-                </div> <!--CLOSING ADDRESS DIV-->
-
-                <div class="form-group"><!--OPENING DIV OTHER ADDY-->
-                    <div>
-                        <label for="otherAddType">Please specify:</label>
-                        <input type="text" id="otherAddType" class="form-control">
-                    </div>
-                </div> <!--CLOSING DIV OTHER ADDY-->
-
-             <div class="form-row"><!--OPENING DIV CITY STATE ZIP-->
-                    <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity"></div>
-
-                    <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select class="form-control" id="inputState">
-                        <option selected>Select...</option>
-                            <option value="AL">AL</option>
-                            <option value="AK">AK</option>
-                            <option value="AZ">AZ</option>
-                            <option value="AR">AR</option>
-                            <option value="CA">CA</option>
-                            <option value="CO">CO</option>
-                            <option value="CT">CT</option>
-                            <option value="DE">DE</option>
-                            <option value="DC">DC</option>
-                            <option value="FL">FL</option>
-                            <option value="GA">GA</option>
-                            <option value="HI">HI</option>
-                            <option value="ID">ID</option>
-                            <option value="IL">IL</option>
-                            <option value="IN">IN</option>
-                            <option value="IA">IA</option>
-                            <option value="KS">KS</option>
-                            <option value="KY">KY</option>
-                            <option value="LA">LA</option>
-                            <option value="ME">ME</option>
-                            <option value="MD">MD</option>
-                            <option value="MA">MA</option>
-                            <option value="MI">MI</option>
-                            <option value="MN">MN</option>
-                            <option value="MS">MS</option>
-                            <option value="MO">MO</option>
-                            <option value="MT">MT</option>
-                            <option value="NE">NE</option>
-                            <option value="NV">NV</option>
-                            <option value="NH">NH</option>
-                            <option value="NJ">NJ</option>
-                            <option value="NM">NM</option>
-                            <option value="NY">NY</option>
-                            <option value="NC">NC</option>
-                            <option value="ND">ND</option>
-                            <option value="OH">OH</option>
-                            <option value="OK">OK</option>
-                            <option value="OR">OR</option>
-                            <option value="PA">PA</option>
-                            <option value="RI">RI</option>
-                            <option value="SC">SC</option>
-                            <option value="SD">SD</option>
-                            <option value="TN">TN</option>
-                            <option value="TX">TX</option>
-                            <option value="UT">UT</option>
-                            <option value="VT">VT</option>
-                            <option value="VA">VA</option>
-                            <option value="WA">WA</option>
-                            <option value="WV">WV</option>
-                            <option value="WI">WI</option>
-                            <option value="WY">WY</option>
-                        </select></div>
-            
-                <div class="form-group col-md-2">
-                    <label for="inputZip">Zipcode</label>
-                    <input type="text" class="form-control" id="inputZip" pattern="[0-9]{5}"></div>
-             </div> <!--CLOSING DIV CITY STATE ZIP-->
-
-            <div class="form-row"><!--OPENING TEL EMAIL-->
-                <div class="form-group col-md-6">
-                    <label for="inputPhone">Phone Number</label>
-                    <input type="tel" class="form-control" id="inputPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></div>
-                <div class="form-group col-md-6">
-                    <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputEmail"></div>
-            </div><!--CLOSNG DIV TEL EMAIL-->
-        </div>
-        <!-- </form> -->
-              
-    <!-- Part 2 – BUILD YOUR ORDER-->
-
-    <!-- STEP 1 -->
-
-    <!-- <form>BUILD ORDER FORM -->
-        <h2>LET'S GET BUILDING!</h2>
-        <div class="form-row">
-            <div class="form-group col-md-6" id="crustType">        
-                <h5>PICK YOUR CRUST</h5>
-                <input type="radio" id="handtossed" name="crust" value="handtossed">
-                <label for="handtossed">Hand Tossed</label>
-                <input type="radio" id="thincrust" name="crust" value="thincrust">
-                <label for="thincrust">Thin Crust</label>
-                <input type="radio" id="newyorkstyle" name="crust" value="newyorkstyle">
-                <label for="newyorkstyle">New York Style</label>
-                <input type="radio" id="glutenfree" name="crust" value="glutenfree">
-                <label for="glutenfree">Gluten Free</label>
-            </div>
-            <div class="form-group col-md-6" id="sizeCost">
-             <h5>SIZE/COST</h5>
-                <!--STEP 2 Drop down:
-                    - Hand Tossed -      Small ($9.99), Medium ($12.99), Large ($14.99)
-                    - Thin Crust -       Medium ($11.99), Large )$13.99)
-                    - New York Style -   Large ($16.99), Extra Large ($19.99)
-                    - Gluten Free -      Small ($10.99)-->
-
-                    <select name="size" id="size"></select>
-                </div>
-        </div>
-            <div class="form-row">
-                <div class="form-group col-md-6" id="cheeseChoice">     
-                    <!-- STEP 3 Drop down:
-                        - Light (+0.00)
-                        - Normal (default; +0.00)
-                        - Extra (+$2.99)
-                        - Double (+$3.99)-->
-
-                <h5>PICK YOUR CHEESE</h5>
-                    <select name="cheese" class="form-control">
-                        <option selected value="normal">Normal (+0.00)</option>
-                        <option value="light">Light (+0.00)</option>                
-                        <option value="extra">Extra (+2.99)</option>
-                        <option value="double">Double (+3.99)</option>
+		  <div class="form-row"> <!--OPENING DIV ADDRESS SECTION-->
+		    <div class="form-group col-md-2" id="inputAddType"> <!--opening div address type-->
+		      <label for="addressType">Address Type</label>
+		      		<select class="form-control" id="addressType">
+	                    <option value="house">House</option>
+	                    <option value="apartment">Apartment</option>
+	                    <option value="business">Business</option>
+	                    <option value="hotel">Hotel</option>
+	                    <option value="campus">Campus</option>
+	                    <option value="dorm">Dorm</option>
+	                    <option value="other" id="other">Other</option>
                     </select>
-                </div>
-                <div class="form-group col-md-6">
-                <div id="sauceChoice"> 
-                    <!--STEP 4 Drop down:
-                        - Regular Tomato (+0.00)
-                        - Hearty Tomato (+$0.99)
-                        - BBQ Sauce (+$1.99)-->
-                    <h5>PICK YOUR SAUCE</h5>
-                    <select name="sauce" class="form-control">
-                        <option selected value="regular">Regular Tomato (+0.00)</option>
-                        <option value="hearty">Hearty Tomato (+0.99)</option>
-                        <option value="bbq">BBQ Sauce (+1.99)</option>
-                    </select>
-                </div>
-                </div>
-             </div>
-           
-              <!-- STEP 5 TOPPINGS
-                - pepperoni
-                - sausage
-                - ham
-                - bacon
-                - salami
-                - peppers
-                - olives
-                - jalapenos
-                - mushrooms
-                - pineapple
-                - onions -->
-        <div> <!--OPENING TOPPINGS-->
-            <h5>PICK YOUR TOPPINGS</h5> 
-            <p>(Each topping $0.99 extra)</p>
-            <input type="checkbox" id="toppings-pep" name="toppings" value="pepperoni">
-                <label for="toppings-pep">Pepperoni</label>
-            <input type="checkbox" id="toppings-sausage" name="toppings" value="sausage">
-                <label for="toppings-sausage">Sausage</label>
-            <input type="checkbox" id="toppings-ham" name="toppings" value="ham">
-                <label for="toppings-ham">Ham</label>
-            <input type="checkbox" id="toppings-bacon" name="toppings" value="bacon">
-                <label for="toppings-bacon">Bacon</label>
-            <input type="checkbox" id="toppings-salami" name="toppings" value="salami">
-                <label for="toppings-salami">Salami</label>
-            <input type="checkbox" id="toppings-peppers" name="toppings" value="peppers">
-                <label for="toppings-peppers">Peppers</label>
-            <input type="checkbox" id="toppings-olives" name="toppings" value="olives">
-                <label for="toppings-olives">Olives</label>
-            <input type="checkbox" id="toppings-jalapenos" name="toppings" value="jalapenos">
-                <label for="toppings-jalapenos">Jalapenos</label>
-            <input type="checkbox" id="toppings-mush" name="toppings" value="mushrooms">
-                <label for="toppings-mush">Mushrooms</label>
-            <input type="checkbox" id="toppings-pine" name="toppings" value="pineapples">
-                <label for="toppings-pine">Pineapples</label>
-            <input type="checkbox" id="toppings-onions" name="toppings" value="onions">
-                <label for="toppings-onions">Onions</label>
-        </div><!--CLOSING DIV TOPINGS-->
-    <!-- </form> -->
 
-    <!-- PART 3 BILLING INFORMATION-->
+		    </div> <!--closing div address type-->
+		    <div class="form-group col-md-6"> <!--opening div address-->
+		      <label for="inputAddress">Address</label>
+		    	<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+		    </div> <!--closing div address-->
+		    <div class="form-group col-md-4">
+		      <label for="inputAddress0">Address 2</label> <!--opening div address 2-->
+		    	<input type="text" class="form-control" id="inputAddress0" placeholder="Apartment, studio, etc...">
+		    </div> <!--closing div address 2-->
+		  </div> <!--CLOSING DIV ADDRESS SECTION-->
 
-        <div class="payment info"> <!--OPENING DIV BILLING INFO-->
-            <h2>Billing Information</h2>
+		  <div class="form-row, hidden" ><!--OPENING DIV OTHER ADDY-->
+                  <label for="otherAddType">Please specify:</label>
+                   <input type="text" id="otherAddType" class="form-control">
+          </div> <!--CLOSING DIV OTHER ADDY-->
 
-            <!-- <div class="form-group"> -->
-                
-                <div class="form-check sameinfo">
-                    <input class="form-check-input" type="checkbox" id="sameinfo">
-                    <label class="form-check-label" for="sameinfo">
-                    <strong>Same as delivery</strong></label></div>
-            </div><!--CLOSING DIV-->
-        <!-- <form> -->
-            <div class="form-group">
-                <label for="billName">Full Name</label>
-                <input type="text" class="form-control" id="billName">
-            </div>
-            
-            <div class="form-row">                
-                <div class="form-group col-md-6">
-                    <label for="billAddress">Address</label>
-                    <input type="text" class="form-control" id="billAddress">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="billAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="billAddress2" placeholder="Apartment, suite, etc..."></div>
-            </div>
-                <div class="form-row"> <!--OPENING DIV-->
-                <div class="form-group col-md-6">
-                    <label for="billCity">City</label>
-                    <input type="text" class="form-control" id="billCity"></div>
-
-                <div class="form-group col-md-4">
-                    <label for="billState">State</label>
-                    <select class="form-control" id="billState">
-                    <option selected>Select...</option>
+		  <div class="form-row"> <!--CLOSING DIV CITY STATE ZIP SECTION-->
+		    <div class="form-group col-md-6"> <!--opening div city-->
+		      <label for="inputCity">City</label>
+		      <input type="text" class="form-control" id="inputCity">
+		    </div> <!--closing div city-->
+		    <div class="form-group col-md-4"> <!--opening div state-->
+		      <label for="inputState">State</label>
+		      		<select id="inputState" class="form-control">
+		        		<option selected>Select...</option>
                         <option value="AL">AL</option>
                         <option value="AK">AK</option>
                         <option value="AZ">AZ</option>
@@ -284,7 +72,7 @@
                         <option value="ID">ID</option>
                         <option value="IL">IL</option>
                         <option value="IN">IN</option>
-                        <option value="IA">IA</option>
+                       	<option value="IA">IA</option>
                         <option value="KS">KS</option>
                         <option value="KY">KY</option>
                         <option value="LA">LA</option>
@@ -319,46 +107,259 @@
                         <option value="WA">WA</option>
                         <option value="WV">WV</option>
                         <option value="WI">WI</option>
-                        <option value="WY">WY</option>
-                    </select></div>
-        
-            <div class="form-group col-md-2">
-                <label for="inputZipcode">Zipcode</label>
-                <input type="text" class="form-control" id="inputZipcode"></div>
-        </div><!--CLOSING DIV BILLING INFO-->
-     
-     
-     <div class="payment info"> <!--OPENING DIV CC INFO-->
-        <h2>Card Information</h2>
-            <div class="form-group">
-                <label for="inputName">Card Number</label>
-                <input type="number" class="form-control" id="ccn" placeholder="0000000000000000"></div>
+                        <option value="WY">WY</option>    
+		      		</select>
+		    </div> <!--closing div state-->
+		    <div class="form-group col-md-2"> <!--closing div zip-->
+		      <label for="inputZip">Zip</label>
+		      <input type="text" class="form-control" id="inputZip">
+		    </div> <!--closing div zip-->
+		  </div> <!--CLOSING DIV CITY STATE ZIP SECTION-->
 
-            <div class="form-row">
-                <div class="form-group col-md-3">
-                    <label for="cvc">CVC</label>
-                    <input type="text" id="cvc" class="form-control"></div>
+		  <div class="form-row"><!--OPENING DIV TEL/EMAIL SECTION-->
+		    <div class="form-group col-md-6"> <!--opening div tel-->
+		      <label for="inputPhone">Phone Number</label>
+		      <input type="tel" class="form-control" id="inputPhone">
+		    </div> <!--closing div tel-->
+		    <div class="form-group col-md-6"> <!--closing div email-->
+		      <label for="inputEmail">Email</label>
+		      <input type="email" class="form-control" id="inputEmail">
+		    </div> <!--closing div email-->
+		  </div> <!--CLOSING DIV TEL/EMAIL SECTION-->
 
-                <div class="form-group col-md-5">
-                    <label>Expires:</label>
-                        <select class="form-control" id="expire-month" >
-                            <option value="jan">Jan</option>
-                            <option value="feb">Feb</option>
-                            <option value="mar">Mar</option>
-                            <option value="apr">Apr</option>
-                            <option value="may">May</option>
-                            <option value="jun">Jun</option>
-                            <option value="jul">Jul</option>
-                            <option value="aug">Aug</option>
-                            <option value="sept">Sep</option>
-                            <option value="oct">Oct</option>
-                            <option value="nov">Nov</option>
-                            <option value="dec">Dec</option>
-                        </select></div>
+		  <!-- <div class="form-group">
+		    <div class="form-check">
+		      <input class="form-check-input" type="checkbox" id="gridCheck">
+		      <label class="form-check-label" for="gridCheck">
+		        Check me out
+		      </label>
+		    </div>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Sign in</button> -->
+		</form> 
+		<form name="frm2">
+		<h2>LET'S GET BUILDING!</h2>
+			<div id="crustType"> <!--OPENING DIV BUILD PIZZA-->
+			<h5>STEP 1: PICK YOUR CRUST</h5>	
+			<div class="form-group col-md-12"> <!--opening div crust-->
+                <input type="radio" id="handtossed" name="crust" value="handtossed">
+                	<label for="handtossed">Hand Tossed</label>
+                <input type="radio" id="thincrust" name="crust" value="thincrust">
+                	<label for="thincrust">Thin Crust</label>
+                <input type="radio" id="newyorkstyle" name="crust" value="newyorkstyle">
+                	<label for="newyorkstyle">New York Style</label>
+                <input type="radio" id="glutenfree" name="crust" value="glutenfree">
+                	<label for="glutenfree">Gluten Free</label>
+            </div> <!--closing div crust-->
+            
+             <h5>STEP 2: SIZE/COST</h5>
+             <div class="form-group col-md-12" id="sizeCost"> <!--opening div size/cost-->
+                <!--STEP 2 Drop down:
+                    - Hand Tossed -      Small ($9.99), Medium ($12.99), Large ($14.99)
+                    - Thin Crust -       Medium ($11.99), Large )$13.99)
+                    - New York Style -   Large ($16.99), Extra Large ($19.99)
+                    - Gluten Free -      Small ($10.99)-->
 
-                <div class="form-group col-md-4">
-                    <!-- <label>.</label> --><br>
-                <select class="form-control" id="expire-year" > 
+                    <select name="size" id="size" class="form-control"></select>
+            </div> <!--closing div size/cost-->
+
+            <h5>STEP 3: PICK YOUR CHEESE</h5>
+            <div class="form-group col-md-12" id="cheese"> <!--opening div cheese-->     
+                    <!-- STEP 3 Drop down:
+                        - Light (+0.00)
+                        - Normal (default; +0.00)
+                        - Extra (+$2.99)
+                        - Double (+$3.99)-->
+                    <select name="cheese" class="form-control">
+                       <option selected value="normal">Normal (+0.00)</option>
+                       <option value="light">Light (+0.00)</option>                
+                       <option value="extra">Extra (+2.99)</option>
+                       <option value="double">Double (+3.99)</option>
+                    </select>
+            </div> <!--closing div cheese-->
+			<h5> STEP 4: PICK YOUR SAUCE</h5>
+            <div class="form-group col-md-12" id="sauce"> <!--opening div sauce-->
+                    <!--STEP 4 Drop down:
+                        - Regular Tomato (+0.00)
+                        - Hearty Tomato (+$0.99)
+                        - BBQ Sauce (+$1.99)-->
+            
+                    <select name="sauce" class="form-control" >
+                       <option selected value="regular">Regular Tomato (+0.00)</option>
+                       <option value="hearty">Hearty Tomato (+0.99)</option>
+                       <option value="bbq">BBQ Sauce (+1.99)</option>
+                    </select>
+            </div> <!--closing div sauce-->
+
+            <!-- STEP 5 TOPPINGS
+                - pepperoni
+                - sausage
+                - ham
+                - bacon
+                - salami
+                - peppers
+                - olives
+                - jalapenos
+                - mushrooms
+                - pineapple
+                - onions -->
+            <h5> STEP 5: PICK YOUR TOPPINGS</h5>
+        	<div id="toppings"> <!--opening div toppings-->
+	            <p>(Each topping $0.99 extra)</p>
+	            <input type="checkbox" id="toppings-pep" name="toppings" value="pepperoni">
+	                <label for="toppings-pep">Pepperoni</label>
+	            <input type="checkbox" id="toppings-sausage" name="toppings" value="sausage">
+	                <label for="toppings-sausage">Sausage</label>
+	            <input type="checkbox" id="toppings-ham" name="toppings" value="ham">
+	                <label for="toppings-ham">Ham</label>
+	            <input type="checkbox" id="toppings-bacon" name="toppings" value="bacon">
+	                <label for="toppings-bacon">Bacon</label>
+	            <input type="checkbox" id="toppings-salami" name="toppings" value="salami">
+	                <label for="toppings-salami">Salami</label>
+	            <input type="checkbox" id="toppings-peppers" name="toppings" value="peppers">
+	                <label for="toppings-peppers">Peppers</label>
+	            <input type="checkbox" id="toppings-olives" name="toppings" value="olives">
+	                <label for="toppings-olives">Olives</label>
+	            <input type="checkbox" id="toppings-jalapenos" name="toppings" value="jalapenos">
+	                <label for="toppings-jalapenos">Jalapenos</label>
+	            <input type="checkbox" id="toppings-mush" name="toppings" value="mushrooms">
+	                <label for="toppings-mush">Mushrooms</label>
+	            <input type="checkbox" id="toppings-pine" name="toppings" value="pineapples">
+	                <label for="toppings-pine">Pineapples</label>
+	            <input type="checkbox" id="toppings-onions" name="toppings" value="onions">
+	                <label for="toppings-onions">Onions</label>
+	       </div><!--closing div toppings-->
+        </div> <!--CLOSING DIV BUILD PIZZA-->
+		</form>
+
+		<form name="frm3">
+		<h2>Billing Information</h2>
+		  <div class="form-check sameinfo"> <!--opening div same as--> 
+              <input class="form-check-input" type="checkbox" id="sameinfo">
+              	<label class="form-check-label" for="sameinfo">
+                <strong>Same as delivery</strong></label>
+          </div><!--closing div same as-->
+
+			<div class="form-row"> <!--OPENING DIV BILL NAME-->
+		      <label for="inputName2">Name on card</label>
+		      <input type="text" class="form-control" id="inputName2">
+		  </div> <!--CLOSING DIV BILL NAME-->
+
+		  <div class="form-row"> <!--OPENING DIV BILL ADDRESS SECTION-->
+		  	<div class="form-group col-md-6"> <!--opening div bill address-->
+		      <label for="inputAddress2">Address</label>
+		    	<input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
+		    </div> <!--closing div bill address-->
+
+		    <div class="form-group col-md-6"> <!--opening div bill address 2-->
+		      <label for="inputAddress01">Address 2</label>
+		    	<input type="text" class="form-control" id="inputAddress01" placeholder="Apartment, studio, etc...">
+		    </div> <!--closing div bill address 2-->
+		  </div> <!--CLOSING DIV BILL ADDRESS SECTION-->
+
+		  <div class="form-row"> <!--OPENING DIV BILL CITY STATE ZIP SECTION-->
+		    <div class="form-group col-md-6"> <!--closing div bill city-->
+		      <label for="inputCity2">City</label>
+		      <input type="text" class="form-control" id="inputCity2">
+		    </div> <!--closing div bill city-->
+
+		    <div class="form-group col-md-4"> <!--opening  bill div state-->
+		      <label for="inputState2">State</label>
+		      		<select id="inputState2" class="form-control">
+		        		<option selected>Select...</option>
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DE">DE</option>
+                        <option value="DC">DC</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                       	<option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WY</option>    
+		      		</select>
+		    </div> <!--closing div bill state-->
+
+		    <div class="form-group col-md-2"><!--opening div bill state-->
+		      <label for="inputZip2">Zip</label>
+		      <input type="text" class="form-control" id="inputZip2">
+		    </div><!--closing div bill zip-->
+		  </div> <!--CLOSING DIV BILL CITY STATE ZIP SECTION-->
+		</form>
+
+		<form name="frm4">
+		<h2>Card Information</h2>
+		  <div class="form-row"> <!--OPENING DIV CARD #-->
+		      <label for="inputCard">Card Number</label>
+		      <input type="number" class="form-control" id="inputCard">
+		  </div> <!--CLOSING DIV CARD #-->
+
+		  <div class="form-row"> <!--OPENING DIV CARD INFO-->
+		    <div class="form-group col-md-4"><!--opening div cvc-->
+		      <label for="inputCvc">CVC</label>
+		      <input type="text" class="form-control" id="inputCvc">
+		    </div> <!--closing div cvc-->
+		    <div class="form-group col-md-4"> <!--opening div month-->
+		      <label for="inputState">Month</label> 
+		      		<select class="form-control" id="expire-month" >
+                    	<option value="jan">01</option>
+                        <option value="feb">02</option>
+                        <option value="mar">03</option>
+                        <option value="apr">04</option>
+                        <option value="may">05</option>
+                        <option value="jun">06</option>
+                        <option value="jul">07</option>
+                        <option value="aug">08</option>
+                        <option value="sept">09</option>
+                        <option value="oct">10</option>
+                        <option value="nov">11</option>
+                        <option value="dec">12</option>
+                    </select>
+		    </div> <!--closing div month-->
+		    <div class="form-group col-md-4"> <!--opening div year-->
+		      <label for="expire-year">Year</label>
+		      	<select class="form-control" id="expire-year" > 
                     <!-- style="margin-bottom: 9em;" -->
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
@@ -369,12 +370,13 @@
                     <option value="2026">2026</option>
                     <option value="2027">2027</option>
                     <option value="2028">2028</option>
-                </select></div>
-                </div>
-        </div> <!--CLOSING DIV CC INFO-->
-    </form> 
-    <!--END OF FORM-->
+                </select>
+		    </div> <!--closing div year-->
+		  </div> <!--CLOSING DIV CARD INFO-->
+		</form>
+
     </main>
+
 <!-- Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
