@@ -131,18 +131,70 @@
 		  </div>
 		  <button type="submit" class="btn btn-primary">Sign in</button> -->
 		</form> 
-		<form>
-		<h2>LET'S GET BUILDING!</h2>	
+		<form name="frm2">
+		<h2>LET'S GET BUILDING!</h2>
+			<div id="crustType"> <!--OPENING DIV BUILD PIZZA-->
+			<h5>STEP 1: PICK YOUR CRUST</h5>	
+			<div class="form-group col-md-12"> <!--opening div crust-->
+                <input type="radio" id="handtossed" name="crust" value="handtossed">
+                	<label for="handtossed">Hand Tossed</label>
+                <input type="radio" id="thincrust" name="crust" value="thincrust">
+                	<label for="thincrust">Thin Crust</label>
+                <input type="radio" id="newyorkstyle" name="crust" value="newyorkstyle">
+                	<label for="newyorkstyle">New York Style</label>
+                <input type="radio" id="glutenfree" name="crust" value="glutenfree">
+                	<label for="glutenfree">Gluten Free</label>
+            </div> <!--closing div crust-->
+            
+             <h5>STEP 2: SIZE/COST</h5>
+             <div class="form-group col-md-12" id="sizeCost"> <!--opening div size/cost-->
+                <!--STEP 2 Drop down:
+                    - Hand Tossed -      Small ($9.99), Medium ($12.99), Large ($14.99)
+                    - Thin Crust -       Medium ($11.99), Large )$13.99)
+                    - New York Style -   Large ($16.99), Extra Large ($19.99)
+                    - Gluten Free -      Small ($10.99)-->
 
+                    <select name="size" id="size" class="form-control"></select>
+            </div> <!--closing div size/cost-->
+
+            <h5>STEP 3: PICK YOUR CHEESE</h5>
+            <div class="form-group col-md-12" id="cheeseChoice"> <!--opening div cheese-->     
+                    <!-- STEP 3 Drop down:
+                        - Light (+0.00)
+                        - Normal (default; +0.00)
+                        - Extra (+$2.99)
+                        - Double (+$3.99)-->
+                    <select name="cheese" class="form-control">
+                       <option selected value="normal">Normal (+0.00)</option>
+                       <option value="light">Light (+0.00)</option>                
+                       <option value="extra">Extra (+2.99)</option>
+                       <option value="double">Double (+3.99)</option>
+                    </select>
+            </div> <!--closing div cheese-->
+
+            <div class="form-group col-md-6" id="sauceChoice">
+                    <!--STEP 4 Drop down:
+                        - Regular Tomato (+0.00)
+                        - Hearty Tomato (+$0.99)
+                        - BBQ Sauce (+$1.99)-->
+            <h5> STEP 4: PICK YOUR SAUCE</h5>
+                    <select name="sauce" class="form-control" >
+                       <option selected value="regular">Regular Tomato (+0.00)</option>
+                       <option value="hearty">Hearty Tomato (+0.99)</option>
+                       <option value="bbq">BBQ Sauce (+1.99)</option>
+                    </select>
+            </div>
+              
+        </div> <!--CLOSING DIV BUILD PIZZA-->
 		</form>
 
 		<form name="frm3">
 		<h2>Billing Information</h2>
-			<div class="form-check sameinfo"> <!--opening div same as--> 
-               <input class="form-check-input" type="checkbox" id="sameinfo">
-                 <label class="form-check-label" for="sameinfo">
-                 <strong>Same as delivery</strong></label>
-            </div><!--closing div same as-->
+		  <div class="form-check sameinfo"> <!--opening div same as--> 
+              <input class="form-check-input" type="checkbox" id="sameinfo">
+              	<label class="form-check-label" for="sameinfo">
+                <strong>Same as delivery</strong></label>
+          </div><!--closing div same as-->
 
 			<div class="form-row"> <!--OPENING DIV BILL NAME-->
 		      <label for="inputName2">Name on card</label>
