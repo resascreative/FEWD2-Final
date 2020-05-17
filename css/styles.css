@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-image: url("/images/background.jpg");
+    background-image: url("/images/white-background.jpg");
    
 }
 main {
@@ -8,6 +8,6 @@ main {
     margin: auto;
     /* overflow: hidden; */
 }
-h2, h5, p, label {
+/* h2, h5, p, label {
     color: white;
-}
+} */
