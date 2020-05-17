@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <!-- <link href="css/normalize.css" type="text/css" rel="stylesheet"> -->
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -48,7 +48,8 @@
                 </div>
 
                 <div class="form-group">
-                    <div class="hidden" id="otherAdd">
+                    <div  id="otherAdd">
+                        <!-- class="hidden" -->
                         <label for="otherAdd">Please specify:</label>
                         <input type="text" id="otherAddType" class="form-control">
                     </div>
@@ -118,8 +119,8 @@
                     </div>
             
                 <div class="form-group col-md-2">
-                    <label for="inputZipcode">Zipcode</label>
-                    <input type="text" class="form-control" id="inputZipcode" pattern="[0-9]{5}">
+                    <label for="inputZip">Zipcode</label>
+                    <input type="text" class="form-control" id="inputZip" pattern="[0-9]{5}">
                 </div>
             </div>
 
@@ -162,10 +163,10 @@
             <div class="form-group col-md-6" id="sizeCost">
              <h5>SIZE/COST</h5>
                 <!--STEP 2 Drop down:
-                    - Hand Tossed ------ Small ($9.99), Medium ($12.99), Large ($14.99)
-                    - Thin Crust ------- Medium ($11.99), Large )$13.99)
-                    - New York Style --- Large ($16.99), Extra Large ($19.99)
-                    - Gluten Free ------ Small ($10.99)-->
+                    - Hand Tossed -      Small ($9.99), Medium ($12.99), Large ($14.99)
+                    - Thin Crust -       Medium ($11.99), Large )$13.99)
+                    - New York Style -   Large ($16.99), Extra Large ($19.99)
+                    - Gluten Free -      Small ($10.99)-->
 
                     <select name="size" id="size"></select>
                 </div>
@@ -247,37 +248,37 @@
         <div class="payment info">
             <h2>Billing Information</h2>
             <div class="form-group">
+                
                 <div class="form-check sameinfo">
                     <input class="form-check-input" type="checkbox" id="sameinfo">
                     <label class="form-check-label" for="samedelivery-checkbox">
-                        <h6>Same as delivery</h6>
-                    </label>
+                    <strong>Same as delivery</strong></label>
                 </div>
             </div>
         <form>
             <div class="form-group">
-                <label for="inputName">Full Name</label>
-                <input type="text" class="form-control" id="inputName">
+                <label for="billName">Full Name</label>
+                <input type="text" class="form-control" id="billName">
             </div>
             
             <div class="form-row">                
                 <div class="form-group col-md-6">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress">
+                    <label for="billAddress">Address</label>
+                    <input type="text" class="form-control" id="billAddress">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, suite, etc...">
+                    <label for="billAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="billAddress2" placeholder="Apartment, suite, etc...">
                 </div>
             </div>
                 <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <label for="billCity">City</label>
+                    <input type="text" class="form-control" id="billCity">
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control" id="inputState">
+                    <label for="billState">State</label>
+                    <select id="inputState" class="form-control" id="billState">
                     <option selected>Select...</option>
                         <option value="AL">AL</option>
                         <option value="AK">AK</option>
@@ -338,7 +339,7 @@
                 <input type="text" class="form-control" id="inputZipcode">
             </div>
         </div>
-     </div>
+     
      
      <div class="payment info">
         <h2>Card Information</h2>
@@ -354,7 +355,7 @@
 
                 <div class="form-group col-md-5">
                     <label>Expires:</label>
-                        <select class="form-control" id="expire-month">
+                        <select class="form-control" id="expire-month" >
                             <option value="jan">Jan</option>
                             <option value="feb">Feb</option>
                             <option value="mar">Mar</option>
@@ -371,8 +372,9 @@
                 </div>
 
                 <div class="form-group col-md-4">
-                    <!-- <label>.</label> --><br><br>
-                <select class="form-control" id="expire-year" style="margin-top: -0.03em;">
+                    <!-- <label>.</label> --><br>
+                <select class="form-control" id="expire-year" > 
+                    <!-- style="margin-bottom: 9em;" -->
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
@@ -388,7 +390,7 @@
             </div> <!--form row ccinfo-->
             
         </div>
-
+    </form>
     </main>
 <!-- Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
