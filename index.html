@@ -6,7 +6,7 @@
     <!-- <link href="css/normalize.css" type="text/css" rel="stylesheet"> -->
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap-theme.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Pizza Joint App</title>
 </head>
@@ -43,7 +43,7 @@
 		    </div> <!--closing div address 2-->
 		  </div> <!--CLOSING DIV ADDRESS SECTION-->
 
-		  <div class="form-row, hidden" ><!--OPENING DIV OTHER ADDY-->
+		  <div class="form-row"> <!--OPENING DIV OTHER ADDY-->
                   <label for="otherAddType">Please specify:</label>
                    <input type="text" id="otherAddType" class="form-control">
           </div> <!--CLOSING DIV OTHER ADDY-->
@@ -164,13 +164,13 @@
             </div> <!--closing div size/cost-->
 
             <h5>STEP 3: PICK YOUR CHEESE</h5>
-            <div class="form-group col-md-12" id="cheese"> <!--opening div cheese-->     
+            <div class="form-group col-md-12" id="cheeseDiv"> <!--opening div cheese-->     
                     <!-- STEP 3 Drop down:
                         - Light (+0.00)
                         - Normal (default; +0.00)
                         - Extra (+$2.99)
                         - Double (+$3.99)-->
-                    <select name="cheese" class="form-control">
+                    <select name="cheese" class="form-control" id="cheese">
                        <option selected value="normal">Normal (+0.00)</option>
                        <option value="light">Light (+0.00)</option>                
                        <option value="extra">Extra (+2.99)</option>
@@ -178,13 +178,13 @@
                     </select>
             </div> <!--closing div cheese-->
 			<h5> STEP 4: PICK YOUR SAUCE</h5>
-            <div class="form-group col-md-12" id="sauce"> <!--opening div sauce-->
+            <div class="form-group col-md-12" id="sauceDiv"> <!--opening div sauce-->
                     <!--STEP 4 Drop down:
                         - Regular Tomato (+0.00)
                         - Hearty Tomato (+$0.99)
                         - BBQ Sauce (+$1.99)-->
             
-                    <select name="sauce" class="form-control" >
+                    <select name="sauce" class="form-control" id="sauce" >
                        <option selected value="regular">Regular Tomato (+0.00)</option>
                        <option value="hearty">Hearty Tomato (+0.99)</option>
                        <option value="bbq">BBQ Sauce (+1.99)</option>
