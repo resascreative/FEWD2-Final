@@ -1,15 +1,16 @@
 // OTHER ADDRESS TYPE 
-    // let AddType = document.getElementById("addressType");
-    // let otherAdd = document.getElementById("otherAddType");//hidden other address text field 
+    let AddType = document.getElementById("addressType");
+    let otherAdd = document.getElementById("otherAddType");//hidden other address text field 
 
-    // AddType.addEventListener("change", function(){
-    //     if (AddType.value = "other"){
-    //         otherAdd.setAttribute("class", "show");
-    //     }else {
-    //         otherAdd.setAttribute("class", "hidden");
-    //     }
-    // }, false);
+    AddType.addEventListener("change", function(){
+        if (AddType.value = "other"){
+            otherAdd.setAttribute("class", "show");
+        }else {
+            otherAdd.setAttribute("class", "hidden");
+        }
+    };
 
+    document.getElementById("addressType").addEventListener("show", "otherAddType");
 
 
 
