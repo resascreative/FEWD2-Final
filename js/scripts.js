@@ -8,7 +8,7 @@
         }else {
             otherAdd.setAttribute("class", "hidden");
         }
-    };
+    }, false);
 
     document.getElementById("addressType").addEventListener("show", "otherAddType");
 
