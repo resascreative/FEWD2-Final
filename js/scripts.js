@@ -1,6 +1,6 @@
 // OTHER ADDRESS TYPE 
-    let AddType = document.getElementById("addressType");
-    let otherAdd = document.getElementById("otherAddType");//hidden other address text field 
+    var AddType = document.getElementById("addressType");
+    var otherAdd = document.getElementById("otherAddType");//hidden other address text field 
 
     AddType.addEventListener("change", function(){
         if (AddType.value = "other"){
