@@ -69,26 +69,5 @@
 //     ]
 // };
 
-// $("crustType").addEventListener("click", doughSelectedHandler);
-// $("sizeCost").addEventListener("click", sizeSelectedHandler);
-// $("cheese").addEventListener("click", cheeseSelectedHandler);
-// $("sauce").addEventListener("click", sauceSelectedHandler);
-// $("toppings").addEventListener("click", toppingsSelectedHandler);
- 
-// // function Pizza(crustType) {
-// //     "use strict";
-// //     var dough, size, sizes = [], cheese, sauce, toppings = [], cost = 0;
-// //     dough = iDough;
+
     
-//     // function setSizes(dough) {
-//     //     switch (dough) {
-//     //     case "Hand Tossed":
-//     //     case "Thin Crust":
-//     //     case "New York Style":
-//     //     case "Gluten Free":
-//     //         sizes = gSizes[dough];
-//     //         break;
-//     //     default:
-//     //         break;
-//     //     }
-//     // }
