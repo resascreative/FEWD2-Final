@@ -12,6 +12,7 @@
 
     document.getElementById("addressType").addEventListener("show", "otherAddType");
 
+// SAME AS DELIVERY
 
 
 
