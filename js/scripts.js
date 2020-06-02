@@ -13,7 +13,16 @@
     document.getElementById("addressType").addEventListener("show", "otherAddType");
 
 // SAME AS DELIVERY
-
+function FillBilling(f) {
+    if(f.sameinfo.checked == true) {
+      f.inputName2.value = f.inputName.value;
+      f.inputAddress2.value = f.inputAddress.value;
+      f.inputAddress01.value = f.inputAddress0.value;
+      f.inputCity2.value = f.inputCity.value;
+      f.inputState2.value = f.inputState.value;
+      f.inputZip2.value = f.inputZip.value;
+    }
+  }
 
 
 // let crustType = {
