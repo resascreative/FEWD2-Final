@@ -140,27 +140,73 @@
 		<h2>LET'S GET BUILDING!</h2>
 			<div> <!--OPENING DIV BUILD PIZZA-->
 			<h5>STEP 1: PICK YOUR CRUST</h5>	
-			<div class="form-group col-md-12" id="crustType"> <!--opening div crust-->
-                <input type="radio" id="handtossed" name="crust" value="hand">
-                	<label for="handtossed">Hand Tossed</label>
-                <input type="radio" id="thincrust" name="crust" value="thin">
-                	<label for="thincrust">Thin Crust</label>
-                <input type="radio" id="newyorkstyle" name="crust" value="newyork">
-                	<label for="newyorkstyle">New York Style</label>
-                <input type="radio" id="glutenfree" name="crust" value="gluten">
-                	<label for="glutenfree">Gluten Free</label>
-            </div> <!--closing div crust-->
+        <div class="form-group col-md-12 row" id=crustType><!--opening div crust-->
+          <div class="custom-control custom-radio" id="handtoss">
+              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio1">Hand Tossed</label>
+          </div> 
+          <div class="custom-control custom-radio" id="thincrust">
+              <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio2">Thin Crust</label>
+          </div>
+          <div class="custom-control custom-radio" id="nystyle">
+              <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio3">New York Style</label>
+          </div>
+          <div class="custom-control custom-radio" id="glutenfree">
+              <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio4">Gluten Free</label>
+          </div>
+      </div><!--closing div crust-->
+        
+      </div> 
+            <div id="crustDropDowns">
+              <form class="crusts">
+              
+              <div class="dropHandToss" style="display: none">   
+                  <select class="custom-select hand price">
+                      <option selected> - Select - </option>
+                      <option value="1">Small: $9.99</option>
+                      <option value="2">Medium: $12.99</option>
+                      <option value="3">Large: $14.99</option>
+                  </select>
+              </div>
             
-             <h5>STEP 2: SIZE/COST</h5>
-             <div class="form-group col-md-12" id="sizeCost"> <!--opening div size/cost-->
+              <div class="dropThinCrust" style="display: none"> 
+                  <select class="custom-select thin price">
+                      <option selected> - Select - </option>
+                      <option value="1">Medium: $11.99</option>
+                      <option value="2">Large: $13.99</option>
+                  </select>
+              </div>
+             
+              <div class="dropNY" style="display: none">
+                  <select class="custom-select nyc price">
+                      <option selected> - Select - </option>
+                      <option value="1">Large: $16.99</option>
+                      <option value="2">Extra Large: $19.99</option>
+                  </select>
+              </div>
+              
+              <div class="dropGFree" style="display: none">
+                  <select class="custom-select gfree price">
+                      <option selected> - Select - </option>
+                      <option value="1">Small: $10.99</option>
+                  </select>
+              </div>
+            </div>
+              </form>
+            
+             <!-- <h5>STEP 2: SIZE/COST</h5>
+             <!-- <div class="form-group col-md-12" id="sizeCost"> <!--opening div size/cost-->
                 <!--STEP 2 Drop down:
                     - Hand Tossed -      Small ($9.99), Medium ($12.99), Large ($14.99)
                     - Thin Crust -       Medium ($11.99), Large )$13.99)
                     - New York Style -   Large ($16.99), Extra Large ($19.99)
-                    - Gluten Free -      Small ($10.99)-->
+                    - Gluten Free -      Small ($10.99)
 
                     <select  id="size" class="form-control"></select>
-            </div> <!--closing div size/cost-->
+            </div> closing div size/cost -->
 
             <h5>STEP 3: PICK YOUR CHEESE</h5>
             <div class="form-group col-md-12" id="cheeseDiv"> <!--opening div cheese-->     

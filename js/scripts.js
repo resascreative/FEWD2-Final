@@ -11,7 +11,37 @@
     }, false);
 
     document.getElementById("addressType").addEventListener("show", "otherAddType");
+    
+//hide and show crust drop downs
+$('.dropHandToss').hide();
+$('.dropThinCrust').hide();
+$('.dropNY').hide();
+$('.dropGFree').hide();
 
+$('#customRadio1').click(() => {
+    $('.dropHandToss').show();
+    $('.dropThinCrust').hide();
+    $('.dropNY').hide();
+    $('.dropGFree').hide();
+})
+$('#customRadio2').click(() => {
+    $('.dropHandToss').hide();
+    $('.dropThinCrust').show();
+    $('.dropNY').hide();
+    $('.dropGFree').hide();
+})
+$('#customRadio3').click(() => {
+    $('.dropHandToss').hide();
+    $('.dropThinCrust').hide();
+    $('.dropNY').show();
+    $('.dropGFree').hide();
+})
+$('#customRadio4').click(() => {
+    $('.dropHandToss').hide();
+    $('.dropThinCrust').hide();
+    $('.dropNY').hide();
+    $('.dropGFree').show();
+})
 // SAME AS DELIVERY
 function FillBilling(f) {
     if(f.sameinfo.checked == true) {
@@ -24,6 +54,21 @@ function FillBilling(f) {
     }
   }
 
+   //REGEX
+   let validation = {
+    name: /^(?![\s.]+$)[a-zA-Z\s.]*$/,
+    address: /^\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St)\.?/,
+    citytype:/^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/,
+    statetype:/^([Aa][LKSZRAEPlkszraep]|[Cc][AOTaot]|[Dd][ECec]|[Ff][LMlm]|[Gg][AUau]|[Hh][Ii]|[Ii][ADLNadln]|[Kk][SYsy]|[Ll][Aa]|[Mm][ADEHINOPSTadehinopst]|[Nn][CDEHJMVYcdehjmvy]|[Oo][HKRhkr]|[Pp][ARWarw]|[Rr][Ii]|[Ss][CDcd]|[Tt][NXnx]|[Uu][Tt]|[Vv][AITait]|[Ww][AIVYaivy])$/,
+    zip: /(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)/,
+    email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
+    phone:  /^\D?([2-9]{1})(\d{2})\D?\D?(\d{3})\D?(\d{4})$/,
+    cvv: /^[0-9]{3,4}$/,
+    visa:  /^4[0-9]{12}(?:[0-9]{3})?$/,
+    mc: /^(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}$ /,
+    amex: /^3[47][0-9]{13}$/,
+    ccn:  /^(?:4[0-9]{12}(?:[0-9]{3})?|(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}|3[47][0-9]{13})$/,
+};
 
 // let crustType = {
 //     HT : "Hand Tossed",
