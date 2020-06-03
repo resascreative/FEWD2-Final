@@ -1,6 +1,8 @@
-// OTHER ADDRESS TYPE 
-    var AddType = document.getElementById("addressType.form-control");
-    var otherAdd = document.getElementById("otherAddType.form-control");//hidden other address text field 
+
+$(document).ready((e) => { 
+    // OTHER ADDRESS TYPE 
+    let AddType = document.getElementById("addressType.form-control");
+    let otherAdd = document.getElementById("otherAddType.form-control");//hidden other address text field 
 
     AddType.addEventListener("show", function(){
         if (AddType.value = "other"){
@@ -13,35 +15,35 @@
     document.getElementById("addressType").addEventListener("show", "otherAddType");
 
 //hide and show crust drop downs
-$('.dropHandToss').hide();
-$('.dropThinCrust').hide();
-$('.dropNY').hide();
-$('.dropGFree').hide();
+// $('.dropHandToss').show();
+// $('.dropThinCrust').hide();
+// $('.dropNY').hide();
+// $('.dropGFree').hide();
 
-$('#customRadio1').click(() => {
-    $('.dropHandToss').show();
-    $('.dropThinCrust').hide();
-    $('.dropNY').hide();
-    $('.dropGFree').hide();
-})
-$('#customRadio2').click(() => {
-    $('.dropHandToss').hide();
-    $('.dropThinCrust').show();
-    $('.dropNY').hide();
-    $('.dropGFree').hide();
-})
-$('#customRadio3').click(() => {
-    $('.dropHandToss').hide();
-    $('.dropThinCrust').hide();
-    $('.dropNY').show();
-    $('.dropGFree').hide();
-})
-$('#customRadio4').click(() => {
-    $('.dropHandToss').hide();
-    $('.dropThinCrust').hide();
-    $('.dropNY').hide();
-    $('.dropGFree').show();
-})
+// $('#customRadio1').click(() => {
+//     $('.selectHand').show();
+//     $('.selectThin').hide();
+//     $('.selectNY').hide();
+//     $('.selectGFree').hide();
+// })
+// $('#customRadio2').click(() => {
+//     $('.selectHand').hide();
+//     $('.selectThin').show();
+//     $('.selectNY').hide();
+//     $('.selectGFree').hide();
+// })
+// $('#customRadio3').click(() => {
+//     $('.selectHand').hide();
+//     $('.selectThin').hide();
+//     $('.selectNY').show();
+//     $('.selectGFree').hide();
+// })
+// $('#customRadio4').click(() => {
+//     $('.selectHand').hide();
+//     $('.selectThin').hide();
+//     $('.selectNY').hide();
+//     $('.selectGFree').show();
+// })
 
 // SAME AS DELIVERY
 $('#sameinfo').click(()=> {

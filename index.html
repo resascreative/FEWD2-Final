@@ -145,6 +145,7 @@
               <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
               <label class="custom-control-label" for="customRadio1">Hand Tossed</label>
           </div> 
+          
           <div class="custom-control custom-radio" id="thincrust">
               <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
               <label class="custom-control-label" for="customRadio2">Thin Crust</label>
@@ -157,12 +158,11 @@
               <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
               <label class="custom-control-label" for="customRadio4">Gluten Free</label>
           </div>
-      </div><!--closing div crust-->
+      <!-- </div><!--closing div crust-->
         
-      </div> 
+      </div>
             <div id="crustDropDowns">
-              <form class="crusts">
-              <div class="dropHandToss" style="display: none">   
+              <div class="selectHand" style="display: none">   
                   <select class="custom-select hand price">
                       <option selected> - Select - </option>
                       <option value="1">Small: $9.99</option>
@@ -170,28 +170,28 @@
                       <option value="3">Large: $14.99</option>
                   </select>
               </div>
-              <div class="dropThinCrust" style="display: none"> 
+              <div class="selectThin" style="display: none"> 
                   <select class="custom-select thin price">
                       <option selected> - Select - </option>
                       <option value="1">Medium: $11.99</option>
                       <option value="2">Large: $13.99</option>
                   </select>
               </div>
-              <div class="dropNY" style="display: none">
-                  <select class="custom-select nyc price">
+              <div class="selectNY" style="display: none">
+                  <select class="custom-select ny price">
                       <option selected> - Select - </option>
                       <option value="1">Large: $16.99</option>
                       <option value="2">Extra Large: $19.99</option>
                   </select>
               </div>
-              <div class="dropGFree" style="display: none">
+              <div class="selectGFree" style="display: none">
                   <select class="custom-select gfree price">
                       <option selected> - Select - </option>
                       <option value="1">Small: $10.99</option>
                   </select>
               </div>
             </div>
-              </form>
+            
             
              <!-- <h5>STEP 1: SIZE/COST</h5>
              <!-- <div class="form-group col-md-12" id="sizeCost"> <!--opening div size/cost-->
@@ -426,6 +426,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 <!-- Javascript-->
-<script src="js /scripts.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
