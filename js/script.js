@@ -46,7 +46,7 @@ $(document).ready((e) => {
 // })
 
 // SAME AS DELIVERY
-$('#sameinfo').click(()=> {
+$('#sameinfo').onclick(()=> {
     "use strict";
     $('#inputName2').val($('#inputName').val());
     $('#inputAddress2').val($('#inputAddress').val());
